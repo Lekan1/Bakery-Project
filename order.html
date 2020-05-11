@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Girassol&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <!-- NAVIGATION BARS -->
+  <div class="container navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Baker's kitchen Bakery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <section class="nav-right">
+        <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto text-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="index.html/#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Make An Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+          </ul>
+        </div>
+    </section>
+      </nav>
+  </div>
+      <!-- ORDER PAGE -->
+      <section class="order">
+          <div class="container">
+            <h1 class="header">Make An Order</h1>
+            <div class="row">
+                <div class = 'col-md-4 left-side'>
+                 <h3 class="text-capitalize para">hey customers make as many orders as you want we have you covered</h3>
+                </div>
+                    <div class="col-md-8">
+                        <form>
+                            <div class="form-group">
+                                <h2>First Name</h2>
+                                <input type="text"  name = "firstname" class="form-control" placeholder="First Name">
+                              </div>
+                              <div class="form-group">
+                                <h2>Last Name</h2>
+                                <input type="text" name = "lastname" class="form-control" placeholder="Last Name">
+                              </div>
+                              <div class="form-group">
+                                <h2>Enter Email</h2>
+                                <input type="email" name = "email" class="form-control" placeholder="Email Details">
+                              </div>
+                              <div class="form-group">
+                                <h2>Address</h2>
+                                <input type="text" name = "address" class="form-control" placeholder="Enter Address">
+                            </div>
+                            <div class="form-group">
+                                <h2>Choose Products</h2>
+                              <select class="form-control" name = "products" id="exampleFormControlSelect1">
+                                <option  value="cupcake">CUPCAKE</option>
+                                <option  value="bread">BREAD</option>
+                                <option  value="chocolate cookie">CHOCOLATE COOKIE</option>
+                                <option  value="donut">DONUT</option>
+                                <option  value="meat pie">MEAT PIE</option>
+                                <option  value="cake">CAKE</option>
+                                <option  value="pizza">PIZZA</option>
+                                <option  value="pie">MOCK MINCEMEAT PIE</option>
+                                <option value="PECAN PIE">PECAN PIE</option>
+                                <option  value="BAKEWELL TART">BAKEWELL TART</option>
+                                <option  value="BROWNIE">BROWNIE</option>
+                                <option  value="COCKTAIL BUN">COCKTAIL BUN</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                                <h2>Quatity</h2>
+                                <select name = "quantity" class="form-control" id="exampleFormControlSelect1">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                  <option>11</option>
+                                  <option>12</option>
+                                </select>
+                              </div>
+                            <div class="form-group">
+                                <h2>Add Comment</h2>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">Comments...........</textarea>
+                            </div>
+                            <button type="submit" name = "submit" class="btn btn-success ">Submit</button>
+                          </form>
+    
+
+                </div>
+
+            </div>
+               
+          </div>
+
+          <footer> &copy; <span class="foot">Powered by Lekan Dar Holdings </span></footer>
+
+      </section>
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+          window.sr = ScrollReveal();
+                sr.reveal('.header', {
+                  duration: 2000,
+                  origin:'top',
+                  distance:'400px',
+                  viewFactor: 0.1
+                });
+                sr.reveal('.para', {
+                  duration: 2000,
+                  origin:'left',
+                  delay: 2000,
+                  distance:'300px'
+                  });
+                  sr.reveal('.row', {
+                  duration: 2000,
+                  origin:'bottom',
+                  distance:'300px'
+                  });
+        </script>
+</body>
+</html>

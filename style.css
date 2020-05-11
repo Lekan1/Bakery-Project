@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+  background-color: white;
+  box-sizing: border-box;
+}
+.navbar{
+  background-color: #1A1A1C !important;
+}
+.nav-item{
+    padding-left: 25px !important;
+    color: #808000 !important;
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    border-bottom: 2px solid white;
+    font-size: 1.5rem;
+    color: #ECE0CC !important;
+}
+.nav-link{
+    color: #ECE0CC !important;
+    font-family: 'charm',serif !important;
+    font-size: 1.5rem !important;
+    
+}
+.img{
+    margin-right: 80px;
+}
+.navigation{
+    margin-bottom: 70px;
+}
+.right-side{
+    margin-top: 70px;
+    margin-left: 20px;
+
+}
+.intro{
+  overflow-x: hidden;
+}
+
+.right-side h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+
+}
+.fancy-btn{
+  display:inline-block;
+  position:relative;
+  padding:10px 20px;
+  border:2px solid #1A1A1C;
+  color:#1A1A1C;
+  font-family:'charm',serif;
+  font-style:italic;
+  font-size:2rem;
+  text-decoration:none;
+  margin:20px auto;
+  transition: color 0.4s
+}
+.fancy-btn:after{
+  content:" ";
+  border:2px solid #1A1A1C;
+  display:inline-block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  transition:all 0.4s;
+}
+.fancy-btn:hover{
+  color:#1A1A1C;
+}
+.fancy-btn:hover:after{  
+  border:2px solid #1A1A1C;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px); 
+}
+
+.right-side p{
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+.about{
+    margin-top: 2rem;
+    background-color: #1A1A1C;
+    color: white;
+    padding: 2rem;
+    margin-bottom: 0rem;
+}
+
+.about h1:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 200px;
+    background: white;
+    margin: 20px auto 5px;
+}
+.about p{
+    font-size: 1rem;
+    padding: 10px;
+}
+.image img{
+  height: 25rem;
+  margin-left: 7rem;
+  border-radius: 20%;
+  width: auto;
+}
+ /* SAMPLE PRODUCTS */
+ #my-products {
+  margin: 0;
+  padding: 6rem;
+  background-color: #BFD1D4;
+  }
+  #my-products h1{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-family: Charm,Arial, Helvetica, sans-serif;
+  }
+  #my-products h1::after{
+  content: '';
+  margin: 20px auto 5px;
+  background: black;
+  display: block;
+  height: 4px;
+  width: 200px;
+  background: black;
+  font-family: Charm,Arial, Helvetica, sans-serif;
+  }
+  .pic img{
+  height: 150px;
+  width: 150px;
+  margin-left: 6rem;
+  border-radius: 30%;
+  filter: grayscale(0);
+  }
+  .pic img:hover{
+  filter: grayscale(1);
+  }
+  h2{
+  text-align: center;
+  color: black;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  font-family: 'Lobster', cursive;
+  border: 2px solid black;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 20%;
+  font-size: 1.8rem;;
+
+  
+  }
+  button {
+  margin-left: 6rem;
+  padding: 15px;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30%;
+  font-family: 'Charm', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  transition: 0.8s ease;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://cdn.pixabay.com/photo/2019/07/06/10/03/mobile-4320136_960_720.jpg');
+  }
+  button:hover{
+  background: url('https://cdn.pixabay.com/photo/2018/03/05/06/37/coffee-3200073_960_720.jpg') ;
+  background-position: center ;
+  background-size: cover;
+  
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Charm";
+  }
+  .center a{
+    background-color: #1A1A1C;
+  }
+  .center a:hover{
+    background-color: #3D4354;
+
+  }
+ .btn {
+  padding: 1rem;
+  font-size: 1.9rem;
+  color: #fff;
+  display: inline-block;
+}
+
+/* GET IN TOUCH */
+.content-box{
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  .content-box h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+  }
+  .content-box h1:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 200px;
+    background: black;
+    margin: 20px auto 5px;
+  }
+  .form-group {
+      margin-top: 40px;
+    border-radius: 0 !important;
+    background: #fff !important;
+    border-radius: 0;
+    box-shadow: none !important;
+  }
+  .contact-form .follow{
+    background: #fff;
+    padding: 8px;
+    margin: 15px;
+  }
+  .contact-form .fa{
+    margin: 10px;
+    font-size: 20px;
+    color: #CD5C5C;
+    padding-right: 25px;
+    font-weight: bold;
+    transition: 0.7s ease-in;
+  }
+  .contact-form span{
+    font-size: 14px;
+  }
+  .contact-form .fa:hover {
+    background: black;
+    color: white;
+    border-radius: 20%;
+    padding: 10px;
+  
+  }
+
+  /* order page */
+  .order {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url('https://cdn.pixabay.com/photo/2016/05/04/19/05/cookies-1372607_960_720.jpg');
+
+  }
+  /* footer */
+  footer {
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    background: black;
+    margin-top: 1px;
+    }
+ /* media queries */
+  @media screen and (max-width: 760px) {
+    #my-products {
+      margin: 0;
+      padding: 6rem;
+      background-color: #BFD1D4;
+      overflow-x: hidden;
+      }
+      #my-products h1{
+      text-align: center;
+      font-size: 24px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      color: black;
+      font-family: Charm,Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+      }
+      #my-products h1::after{
+      content: '';
+      margin: 20px auto 5px;
+      background: black;
+      display: block;
+      height: 4px;
+      width: 200px;
+      background: black;
+      font-family: Charm,Arial, Helvetica, sans-serif;
+      }
+      .pic img{
+      height: 150px;
+      width: 150px;
+      margin-left: 7rem;
+      border-radius: 30%;
+      filter: grayscale(0);
+      }
+      .pic img:hover{
+      filter: grayscale(1);
+      }
+      h2{
+      text-align: center;
+      color: black;
+      margin-left: 6rem;
+      margin-top: 1rem;
+      padding-top: 2rem;
+      font-family: 'Lobster', cursive;
+      border: 2px solid black;
+      padding: 5px;
+      display: inline-block;
+      border-radius: 20%;
+      font-size: 1.8rem;;
+    
+      
+      }
+    
+     
+   
+  }

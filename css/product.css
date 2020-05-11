@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #1A1A1C !important;
+  }
+  .nav-item{
+      padding-left: 25px !important;
+      color: #808000 !important;
+  }
+  .navbar-brand{
+      font-family: 'Lobster', cursive;
+      border-bottom: 2px solid white;
+      font-size: 1.5rem;
+      color: #ECE0CC !important;
+  }
+  .nav-link{
+      color: #ECE0CC !important;
+      font-family: 'charm',serif !important;
+      font-size: 1.5rem !important;
+      
+  }
+#my-products {
+    margin-top: 1px;
+padding-top: 0.7rem;
+background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://cdn.pixabay.com/photo/2020/02/11/21/09/breads-4840959_960_720.jpg');
+background-position: center;
+background-size: cover;
+}
+#my-products h1{
+text-align: center;
+font-size: 24px;
+margin-top: 5rem;
+text-transform: uppercase;
+color: white;
+
+}
+#my-products h1::after{
+content: '';
+margin: 20px auto 5px;
+background: black;
+display: block;
+height: 4px;
+width: 200px;
+background: white;
+}
+.pic img{
+height: 150px;
+width: 150px;
+margin-left: 40px;
+border-radius: 30%;
+filter: grayscale(0);
+}
+.pic img:hover{
+filter: grayscale(1);
+}
+h2{
+text-align: center;
+color: white;
+margin-top: 10px;
+font-family: 'Lobster', cursive;
+border: 2px solid black;
+padding: 5px;
+border-radius: 20%;
+
+}
+button {
+margin-left: 25px;
+padding: 15px;
+background-size: cover;
+background-position: center;
+border-radius: 30%;
+font-family: 'Arvo', sans-serif;
+font-size: 20px;
+text-align: center;
+color: white;
+transition: 0.8s ease;
+background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://cdn.pixabay.com/photo/2019/07/06/10/03/mobile-4320136_960_720.jpg');
+}
+button:hover{
+background: url('https://cdn.pixabay.com/photo/2018/03/05/06/37/coffee-3200073_960_720.jpg') ;
+background-position: center ;
+background-size: cover;
+
+}
+footer {
+padding: 30px;
+text-align: center;
+font-weight: 700;
+font-size: 32px;
+color: white;
+background: black;
+margin-top: 1px;
+}
