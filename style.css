@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@1,500&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -7,28 +8,113 @@
 body{
   background-color: white;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-.navbar{
-  background-color: #1A1A1C !important;
+
+.navbar-toggle .icon-bar {
+    width: 26px;
+    height: 2px;
+    transition: all 0.2s;
 }
-.nav-item{
-    padding-left: 25px !important;
-    color: #808000 !important;
+
+.navbar-toggler-icon {
+    color: #fff !important;
 }
-.navbar-brand{
-    font-family: 'Lobster', cursive;
-    border-bottom: 2px solid white;
+
+.navbar {
+    background-color: #1A1A1C !important;
+    font-family: "Lobster", Arial, Helvetica, sans-serif;
+    color: #fff !important;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 1.3s ease-out !important;
+}
+
+.navbar-brand {
+    padding: 3px 10px;
+    border-bottom: 2px solid  #ECE0CC;
     font-size: 1.5rem;
     color: #ECE0CC !important;
+    transition: ease-in-out 1.1s all;
+    animation: rubberBand;
+    animation-duration: 5s;
 }
-.nav-link{
+
+.nav-link {
+    padding: 5px 30px !important;
     color: #ECE0CC !important;
-    font-family: 'charm',serif !important;
-    font-size: 1.5rem !important;
-    
+    transition: 0.8s ease-out all;
 }
-.img{
-    margin-right: 80px;
+
+.nav-link:hover {
+    background-color: #8989ba !important;
+    color: #fff !important;
+    border: 2px solid black;
+    animation: pulse;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+}
+
+.icon-bar {
+    width: 33px;
+    height: 6px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 6px;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+/* THE ANIMATION */
+.navbar-toggler .top-bar {
+    transform: rotate(48deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.color-change {
+    background-color: rgb(0, 0, 0) !important;
+    font-family: "Charm";
+    transition: 0.8s ease-out all;
+
+
+}
+
+.brand-change {
+    font-size: 1.7rem !important;
+    animation: shakeX;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
+    transition: 0.8s ease-out all;
+}
+/* END OF NAVIGATION */
+.bakery-image img{
+  width: 90%;
 }
 .navigation{
     margin-bottom: 70px;
@@ -40,6 +126,7 @@ body{
 }
 .intro{
   overflow-x: hidden;
+  text-align: center;
 }
 
 .right-side h1{
@@ -78,16 +165,18 @@ body{
 .fancy-btn:hover{
   color:#1A1A1C;
 }
-.fancy-btn:hover:after{  
+.fancy-btn:hover:after{
   border:2px solid #1A1A1C;
   width: calc(100% - 10px);
-  height: calc(100% + 10px); 
+  height: calc(100% + 10px);
 }
 
 .right-side p{
+  font-family: 'Roboto', sans-serif;
     margin-top: 20px;
-    font-size: 22px;
-    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 .about{
     margin-top: 2rem;
@@ -109,17 +198,21 @@ body{
     font-size: 1rem;
     padding: 10px;
 }
+.image{
+  text-align: center;
+}
 .image img{
-  height: 25rem;
-  margin-left: 7rem;
+  width: 50%;
   border-radius: 20%;
-  width: auto;
 }
  /* SAMPLE PRODUCTS */
  #my-products {
   margin: 0;
   padding: 6rem;
   background-color: #BFD1D4;
+  }
+  .group{
+    text-align: center;
   }
   #my-products h1{
   text-align: center;
@@ -139,52 +232,21 @@ body{
   background: black;
   font-family: Charm,Arial, Helvetica, sans-serif;
   }
-  .pic img{
-  height: 150px;
+.group{
+  padding: 1.2rem !important;
+  text-align: center;
+}
+.group img{
   width: 150px;
-  margin-left: 6rem;
-  border-radius: 30%;
-  filter: grayscale(0);
-  }
-  .pic img:hover{
-  filter: grayscale(1);
-  }
-  h2{
-  text-align: center;
-  color: black;
-  margin-left: 6rem;
-  margin-top: 1rem;
-  padding-top: 2rem;
-  font-family: 'Lobster', cursive;
+  height: 150px;
+  border-radius: 10%;
+}
+.group h2{
+  margin: 2rem;
   border: 2px solid black;
-  padding: 5px;
-  display: inline-block;
-  border-radius: 20%;
-  font-size: 1.8rem;;
-
-  
-  }
-  button {
-  margin-left: 6rem;
-  padding: 15px;
-  margin-top: 1rem;
-  text-transform: capitalize;
-  background-size: cover;
-  background-position: center;
-  border-radius: 30%;
-  font-family: 'Charm', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  transition: 0.8s ease;
-  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://cdn.pixabay.com/photo/2019/07/06/10/03/mobile-4320136_960_720.jpg');
-  }
-  button:hover{
-  background: url('https://cdn.pixabay.com/photo/2018/03/05/06/37/coffee-3200073_960_720.jpg') ;
-  background-position: center ;
-  background-size: cover;
-  
-  }
+  padding: .4rem;
+  font-family: 'Roboto', sans-serif;
+}
   .center{
     display: flex;
     justify-content: center;
@@ -252,7 +314,7 @@ body{
     color: white;
     border-radius: 20%;
     padding: 10px;
-  
+
   }
 
   /* order page */
@@ -269,6 +331,10 @@ body{
     color: white;
     background: black;
     margin-top: 1px;
+    }
+    .foot{
+      animation: bounce;
+     animation-duration: 5s;
     }
  /* media queries */
   @media screen and (max-width: 760px) {
@@ -297,32 +363,44 @@ body{
       background: black;
       font-family: Charm,Arial, Helvetica, sans-serif;
       }
-      .pic img{
-      height: 150px;
-      width: 150px;
-      margin-left: 7rem;
-      border-radius: 30%;
-      filter: grayscale(0);
-      }
-      .pic img:hover{
-      filter: grayscale(1);
-      }
-      h2{
-      text-align: center;
-      color: black;
-      margin-left: 6rem;
-      margin-top: 1rem;
-      padding-top: 2rem;
-      font-family: 'Lobster', cursive;
-      border: 2px solid black;
-      padding: 5px;
-      display: inline-block;
-      border-radius: 20%;
-      font-size: 1.8rem;;
-    
-      
-      }
-    
-     
-   
+
+
   }
+@media (max-width: 600px){
+  .bakery-image img{
+    width: 80%;
+  }
+.right-side{
+  margin: .9rem 1.7rem;
+}
+.right-side p{
+  font-size: 2rem;
+  margin: .8rem;
+}
+.about p{
+  line-height: 1.6;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1rem;
+}
+.image img{
+  width: 80%;
+  text-align: center;
+}
+.group img{
+  margin-left: 1.2rem;
+}
+.group h2{
+text-align: center;
+color: black;
+font-family: 'Lobster', cursive;
+border: 2px solid black;
+border-radius: 20%;
+font-size: 1.8rem;;
+}
+footer{
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+}
